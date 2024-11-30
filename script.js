@@ -76,6 +76,7 @@ cityInput.addEventListener('keypress', (e) => {
 
 
 
+
 // Create an array to store the history of searched cities
 let searchHistory = [];
 
