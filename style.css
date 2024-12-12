@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(Beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    max-width: 300px;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: #2575fc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.weather-info p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.error-message {
+    margin-top: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .weather-info p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Style for my list of items. */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: lightskyblue;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+li button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+li button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 480px) {
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
